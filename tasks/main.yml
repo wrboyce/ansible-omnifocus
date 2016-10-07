@@ -1,0 +1,6 @@
+---
+- name: install App
+  homebrew_cask: name=omnifocus state=present
+
+- name: set sync url
+  osx_defaults: domain="/Users/wrboyce/Library/Containers/com.omnigroup.OmniFocus2/Data/Library/Preferences/com.omnigroup.OmniFocus2" key=RemoteFocusSynchronizationURL type=string value={{ omnifocus_sync_url }}

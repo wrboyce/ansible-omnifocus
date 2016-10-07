@@ -1,0 +1,3 @@
+---
+omnifocus_sync_user: "{{ user_username }}"
+omnifocus_sync_url: https://{{ omnifocus_sync_user }}@sync.omnigroup.com/{{ omnifocus_sync_user }}/OmniFocus.ofocus$encrypted
